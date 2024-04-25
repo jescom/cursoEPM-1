@@ -87,7 +87,7 @@ model = Sequential([
 
 # Compilar y entrenar el modelo
 model.compile(optimizer='adam', loss='mean_squared_error')
-history = model.fit(X_train, y_train, epochs=30, batch_size=32, validation_data=(X_val, y_val))
+history = model.fit(X_train, y_train, epochs=50, batch_size=32, validation_data=(X_val, y_val))
 
 # Graficar la historia de entrenamiento
 plt.plot(history.history['loss'], label='train')
